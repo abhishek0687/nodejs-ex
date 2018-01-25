@@ -11,7 +11,8 @@ exports.serve=function(app,express){
 	
 	app.get('/',function(req,resp){
 		console.log("in /"+ __dirname);
-		resp.sendfile('home.html', {'root': __dirname +'/../public'});
+		resp.write(JSON.stringify({"JAL":"Started server Successfully"}));	
+		resp.end();		
 	})
 
 	app.get('/water/:id',function(req,resp){		
