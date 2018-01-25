@@ -64,6 +64,11 @@ var initDb = function(callback) {
 };
 
 
+initDb(function(err){
+  console.log('Error connecting to Mongo. Message:\n'+err);
+});
+
+
 
 	
 
