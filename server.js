@@ -4,7 +4,7 @@ var express = require('express'),
     morgan  = require('morgan');
 var route = require('./routes/route');
 var dbConfig = require('./core/db');
-var db = dbConfig.dbs;
+var db = dbConfig.dbs.db;
 //var initDb = db.initDb;
 //Object.assign=require('object-assign')
 
@@ -21,7 +21,8 @@ app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
-    dbConfig.initDb(function(err){});
+    //dbConfig.initDb(function(err){});
+    console.log("Error connecting db");
   }
   if (db) {
     var col = db.collection('counts');
