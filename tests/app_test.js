@@ -17,6 +17,7 @@ describe('Basic routes tests', function() {
         //    done();
         //})
         console.log("Test1");
+        done();
 
     })
 
@@ -28,6 +29,6 @@ describe('Basic routes tests', function() {
         //    done();
         //})
         console.log("Test2");
-
+        done();
     })
 })
