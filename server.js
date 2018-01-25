@@ -4,7 +4,7 @@ var express = require('express'),
     morgan  = require('morgan');
 var route = require('./routes/route');
 var dbConfig = require('./core/db');
-var db = dbConfig.dbs.db;
+var db = dbConfig.dbs;
 //var initDb = db.initDb;
 //Object.assign=require('object-assign')
 
