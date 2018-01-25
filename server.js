@@ -5,7 +5,7 @@ var express = require('express'),
 var route = require('./routes/route');
 var dbConfig = require('./core/db');
 var db = dbConfig.dbs;
-var initDb = db.initDb;
+//var initDb = db.initDb;
 //Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
@@ -67,3 +67,4 @@ console.log('Server running on http://%s:%s', ip, port);
 
 route.serve(app,express);
 module.exports = app ;
+  
